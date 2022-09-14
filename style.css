@@ -1,0 +1,524 @@
+@font-face {
+  font-family: "Tomorrow";
+  src: url(./font/Tomorrow-Medium.ttf);
+}
+@font-face {
+  font-family: "Syne";
+  src: url(./font/syne.regular.ttf);
+}
+@font-face {
+  font-family: "04b_19";
+  src: url(./font/04B_19__.TTF);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::selection{
+  background-color: #0d1950;
+  color:#fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.l-header {
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/*===== TOP NAVIGATION BAR =====*/
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 8px 20px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.nav__logo img {
+  width: 105px;
+  height: 55px;
+}
+.nav__item {
+  display: inline-block;
+}
+.nav__link {
+  font-family: 'Tomorrow', sans-serif;
+  padding: 0px 15px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 0em;
+  color: #0d1950;
+}
+
+.nav__button {
+  margin-left: auto;
+  order: 2;
+
+  width: 205px;
+  height: 50px;
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 43px;
+  background: #0d1950;
+  border: 3px solid #0d1950;
+  box-shadow: 3px 3px 0px #ed1e79;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+/* HOME SECTION */
+
+.home {
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  row-gap: 1rem;
+}
+.home img {
+  padding-top: 1rem;
+  height: 295px;
+}
+.home__title {
+  margin-top: 0;
+  padding-top: 0;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 38px;
+  font-weight: bold;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #0d1950;
+  margin-bottom: 1rem;
+}
+.home__title span {
+  color: #ed1e79;
+}
+
+.home__button {
+  display: inline-block;
+  margin-top: 1rem;
+  width: 240px;
+  height: 59px;
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 55px;
+  background: #ed1e79;
+  border: 3px solid #0d1950;
+  box-shadow: 3px 3px 0px #0d1950;
+  border-radius: 10px;
+  color: #fff;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  background: #fb85d0;
+  background-size: cover;
+  height: 300vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.about__container {
+  margin: 0;
+  padding: 0;
+}
+.about__data {
+  flex: 50%;
+  align-items: center;
+  justify-items: center;
+  text-align: left;
+  width: min(105%, 1000px);
+  margin-inline: auto;
+  padding: max(6vh, 3rem);
+}
+.about__title {
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 95px;
+  margin-bottom: 1rem;
+  align-items: center;
+  color: #0d1950;
+}
+.about__img {
+  flex: 50%;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding-top: max(6vh, 10%);
+}
+.about__data p {
+  font-family: 'Syne', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+/* ABOUT CARDS  */
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: 330px;
+  height: 530px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #231f20;
+  box-shadow: 10px 10px 0px #231f20;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+}
+.card > * {
+  padding: 10px;
+}
+.card .card-image {
+  height: 220px;
+  width: 220px;
+  background-position: center center;
+  background-size: cover;
+}
+.card .card-title {
+  color: #0d1950;
+  padding: 20px 10px;
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.card:nth-child(1) .card-image {
+  background-image: url(img/Mobile\ Testing_Flatline.png);
+}
+.card:nth-child(2) .card-image {
+  background-image: url(img/Video\ call_Flatline.png);
+}
+.card:nth-child(3) .card-image {
+  background-image: url(img/Web\ development\ _Flatline.png);
+}
+.card:nth-child(4) .card-image {
+  background-image: url(img/Code\ Development\ _Flatline.png);
+}
+.card:nth-child(5) .card-image {
+  background-image: url(img/Great\ idea_Flatline.png);
+}
+.card:nth-child(6) .card-image {
+  background-image: url(img/Share_Flatline.png);
+}
+
+.card .card-text {
+  font-family: 'Syne', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* MEET THE TEAM SECTION */
+
+.team {
+  background: #0d1950;
+  background-size: cover;
+  height: 320vh;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.team h1,
+.team p {
+  text-align: center;
+  color: #fff;
+}
+.team h1 {
+  font-family: "04b_19", sans-serif;
+  font-size: 90px;
+  font-weight: 400;
+  line-height: 70px;
+  letter-spacing: 0em;
+  padding-top: 50px;
+}
+.team p {
+  font-family: 'Tomorrow', sans-serif;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 70px;
+  padding-bottom: 45px;
+}
+
+.team-card {
+  width: 300px;
+  height: 400px;
+  position: relative;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  border: 3px solid #ed1e79;
+  box-shadow: 10px 10px 0px #ed1e79;
+  border-radius: 20px;
+  padding: 20px;
+  transition: all 0.3s ease-in;
+}
+.team-card > * {
+  padding: 10px;
+}
+.team-card .team-card-image {
+  height: 200px;
+  width: 200px;
+  background-position: center center;
+  background-size: cover;
+  background: #ed1e79;
+  border-radius: 50%;
+}
+.team-card-image {
+  margin: 0 70px 0 30px;
+}
+.team-card .team-card-title {
+  color: #0d1950;
+  padding: 20px 10px;
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+/* TEAM LARAVEL MEMBERS PROFILE IMAGE */
+
+/*
+ .team-card:nth-child(1) .team-card-image{
+   background-image: url(); 
+}
+
+.team-card:nth-child(2) .team-card-image{
+  background-image: url();
+}
+.team-card:nth-child(3) .team-card-image{
+  background-image: url();
+}
+.team-card:nth-child(4) .team-card-image{
+  background-image: url();
+}
+.team-card:nth-child(5) .team-card-image{
+  background-image: url();
+}
+.team-card:nth-child(6) .team-card-image{
+  background-image: url();
+} */
+
+.team-card .team-card-text {
+  font-family: 'Syne', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/* FOOTER  */
+
+.footer {
+  background-color: #fff;
+  height: 40vh;
+}
+.footer-container {
+  margin: 50px 50px 50px 50px;
+}
+.footer-image {
+  width: 330px;
+  height: 169px;
+}
+.footer-text {
+  font-family: "04b_19", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 48px;
+  color: #0d1950;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+/* 769px to 1440 px Resolution */
+
+@media only screen and (max-width: 1440px) and (min-width: 769px) {
+  .home__title {
+    margin-bottom: 3rem;
+  }
+  .home__button {
+    margin-bottom: 4rem;
+  }
+  #about__data {
+    padding-left: 100px;
+  }
+  .about__data h1 {
+    padding-top: 20px;
+  }
+  .about__img img {
+    padding-top: 3rem;
+  }
+}
+
+/* 768px Resolution */
+
+@media screen and (max-width: 768px) {
+  .nav__button {
+    display: none;
+  }
+}
+
+/* 600px Resolution */
+
+@media screen and (max-width: 600px) {
+  .nav__button {
+    display: none;
+  }
+}
+
+/* 200px to 480px Resolution */
+
+@media only screen and (max-width: 480px) and (min-width: 200px) {
+  .nav__button {
+    display: none;
+  }
+  .nav {
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+  }
+  .nav__logo img {
+    margin-top: 1rem;
+  }
+  .nav__item {
+    display: inline-flex;
+  }
+  .nav__link {
+    font-size: 15px;
+    margin: 0 8px 0 0;
+    padding: 0 11px 0 4px;
+  }
+  section {
+    height: 100vh;
+  }
+  .home img {
+    height: 250px;
+  }
+  .home__title {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    margin-bottom: 2rem;
+  }
+
+  .about {
+    width: 100%;
+    display: flex;
+    height: 600vh;
+    overflow: hidden;
+  }
+  .about__data,
+  .about__img {
+    flex: 100%;
+    display: flex;
+    flex-direction: column;
+    column-gap: 0px;
+  }
+  .about__img img {
+    height: 180px;
+    order: 1;
+  }
+  .about__data {
+    order: 2;
+    padding: 25px;
+  }
+  .about__data h1 {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 65px;
+    margin-bottom: 2rem;
+  }
+  #about p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .card-container {
+    order: 3;
+  }
+  .card {
+    width: 310px;
+    height: 550px;
+  }
+  .team {
+    height: 665vh;
+  }
+  .team h1 {
+    font-size: 65px;
+    line-height: 65px;
+  }
+  .team p {
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+  }
+  .footer-text {
+    padding-top: 1rem;
+    font-size: 38px;
+    line-height: 38px;
+  }
+}

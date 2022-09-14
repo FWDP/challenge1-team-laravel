@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@fontsource/syne": "^4.5.11",
+    "@fontsource/tomorrow": "^4.5.10"
+  }
+}
