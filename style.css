@@ -21,13 +21,7 @@
   color:#fff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-html,
-body {
-  overflow-x: hidden;
-}
+/*MOBILE FIRST*/
 
 h1,
 h2,
@@ -97,6 +91,10 @@ a {
   border-radius: 10px;
   color: #fff;
   text-align: center;
+}
+
+.nav__button:hover{
+  background-color: #ed1e79;
 }
 
 /* HOME SECTION */
@@ -236,24 +234,6 @@ a {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
-}
-.card:nth-child(1) .card-image {
-  background-image: url(img/Mobile\ Testing_Flatline.png);
-}
-.card:nth-child(2) .card-image {
-  background-image: url(img/Video\ call_Flatline.png);
-}
-.card:nth-child(3) .card-image {
-  background-image: url(img/Web\ development\ _Flatline.png);
-}
-.card:nth-child(4) .card-image {
-  background-image: url(img/Code\ Development\ _Flatline.png);
-}
-.card:nth-child(5) .card-image {
-  background-image: url(img/Great\ idea_Flatline.png);
-}
-.card:nth-child(6) .card-image {
-  background-image: url(img/Share_Flatline.png);
 }
 
 .card .card-text {
